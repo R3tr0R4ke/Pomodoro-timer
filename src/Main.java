@@ -1,4 +1,3 @@
-
 /*Program developed by R3tr0R4k3
  * Feel free to report bug or some advice for this program
  */
