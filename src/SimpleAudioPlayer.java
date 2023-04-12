@@ -38,14 +38,13 @@ public class SimpleAudioPlayer {
 
   public static void avviaSuono() {
     try {
-      filePath = "Pomodoro-timer\\sounds\\FX2.wav";
+      filePath = "FX2.wav";
       SimpleAudioPlayer audioPlayer = new SimpleAudioPlayer();
 
       audioPlayer.play();
 
       while (true) {
-        System.out
-            .print(ANSI_BLUE + "\nInserisci 1 per stoppare il suono e iniziare la pausa/blocco studio: " + ANSI_RESET);
+        System.out.print(ANSI_BLUE + "\nInserisci 1 per stoppare il suono e iniziare la pausa/blocco studio: " + ANSI_RESET);
         int c = sc.nextInt();
 
         audioPlayer.gotoChoice(c);

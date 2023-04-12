@@ -64,8 +64,8 @@ public class Inserimenti {
                 setDurataBloccoStudio(studioBlocco);
                 chiediRipetizioni();
             } else if (studioBlocco < 20) {
-                System.out.println(ANSI_PURPLE + "\nVuoi veramente studiare o fare finta?..." + ANSI_RESET);
-                chiediBloccoStudio();
+                //System.out.println(ANSI_PURPLE + "\nVuoi veramente studiare o fare finta?..." + ANSI_RESET);
+                //chiediBloccoStudio();
             }
         } catch (Exception e) {
             System.out.println(ANSI_RED + "\nInserisci un valore numerico intero..." + ANSI_RESET);

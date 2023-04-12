@@ -13,16 +13,14 @@ public class Pomodoro {
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_BLUE = "\u001B[34m";
     public static final String ANSI_GREEN = "\u001B[32m";
-
+    
     public static void main(String[] args) {
         menuPrincipale();
     }
 
     public static void menuPrincipale() {
         try {
-            System.out.print(ANSI_BLUE
-                    + "\nCosa vuoi fare?\n1: Termina programma\n2: Imposta piano studio\n3: Visualizza piano studio\n4: Avvia timer\nInserisci scelta con il corrispondente numero: "
-                    + ANSI_RESET);
+            System.out.print(ANSI_BLUE + "\nCosa vuoi fare?\n1: Termina programma\n2: Imposta piano studio\n3: Visualizza piano studio\n4: Avvia timer\nInserisci scelta con il corrispondente numero: " + ANSI_RESET);
             int scelta = myScelta.nextInt();
 
             switch (scelta) {
