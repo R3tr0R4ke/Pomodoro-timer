@@ -18,6 +18,7 @@ java -jar *filepath*
 ```
 # Second Method:
 Steps:
+<br>
 1:            Download the file "Pomodoro.jar"
 <br>
 2:            Press "Windows" key and serach for blocknotes then open it
