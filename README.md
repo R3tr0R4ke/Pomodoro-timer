@@ -17,5 +17,4 @@ Download the file "Pomodoro.jar" and run it by opening the terminal and entering
 java -jar *filepath*
 ```
 # Contacts:
-
-LinkedIn: https://www.linkedin.com/in/cesare-federico-sgaramella/ 
+[LinkedIn](https://www.linkedin.com/in/cesare-federico-sgaramella/)
