@@ -18,5 +18,7 @@ java -jar *filepath*
 ```
 # Contacts:
 [LinkedIn](https://www.linkedin.com/in/cesare-federico-sgaramella/)
+<br>
 [Instagram](https://www.instagram.com/fede_rake/)
+<br>
 [Github](https://github.com/R3tr0R4ke)
