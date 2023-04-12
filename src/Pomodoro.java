@@ -3,7 +3,7 @@
  */
 import java.util.Scanner;
 
-public class Main {
+public class Pomodoro {
     // Dichiarazione oggetto myInsert
     private static Inserimenti myInsert = new Inserimenti(0, 0, 0, 0);
     private static Scanner myScelta = new Scanner(System.in);
