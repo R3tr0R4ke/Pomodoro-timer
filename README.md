@@ -16,6 +16,8 @@ Download the file "Pomodoro.jar" and run it by opening the terminal and entering
 ```bash
 java -jar *filepath*
 ```
+This method have a issue where the sound allert for the reminders doesn't get found, but the program still work
+
 # Second Method:
 Steps:
 <br>
