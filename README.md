@@ -21,17 +21,13 @@ Steps:
 <br>
 1:            Download the file "Pomodoro.jar"
 <br>
-2:            Press "Windows" key and serach for blocknotes then open it
+2:            Press "Windows" key and search for blocknotes then open it
 <br>
-3:            Write in the blocknotes: java -jar Pomodoro.jar
-<br>
-3(optional):  Write in the blocknotes: java -jar "filePath"
+3:            Write in the blocknotes: java -jar filepath\Pomodoro.jar
 <br>
 4:            Save it with the extension .bat
 <br>
 5:            Copy it to the directory which has the .jar file
-<br>
-5(optional):  You don't need to copy it to the directory if you followed the 3(optional) step
 <br>
 6:            Double click it to run your Pomodoro.jar file
 
