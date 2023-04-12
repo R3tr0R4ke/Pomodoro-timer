@@ -9,10 +9,8 @@ public class Inserimenti {
     // Variabili che permettono di aggiungere colore alle stringhe visualizzate in output (su Windows potrebberò non essere visualizzati)
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_YELLOW = "\u001B[33m";
-
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_GREEN = "\u001B[32m";
-
     public static final String ANSI_PURPLE = "\u001B[35m";
 
     private static Scanner myInt = new Scanner(System.in);
@@ -97,21 +95,17 @@ public class Inserimenti {
 
     public void chiediPausa() {
         try {
-            System.out.print( ANSI_YELLOW + "\nQuanto deve durare la pausa dopo il blocco di studio?\nInserire numero in minuti: " + ANSI_RESET);
+            System.out.print(ANSI_YELLOW + "\nQuanto deve durare la pausa dopo il blocco di studio?\nInserire numero in minuti: " + ANSI_RESET);
             int pausa = myInt.nextInt();
 
             if (pausa >= getDurataBloccoStudio() || pausa > 30) {
-                System.out.println(ANSI_RED
-                        + "\nUna pausa non può essere più lunga di quanto tempo vuoi studiare!!!\nReinserisci un valore numerico intero non ambiguo..."
-                        + ANSI_RESET);
+                System.out.println(ANSI_RED + "\nUna pausa non può essere più lunga di quanto tempo vuoi studiare!!!\nReinserisci un valore numerico intero non ambiguo..." + ANSI_RESET);
                 chiediPausa();
             } else if (pausa < 20) {
                 System.out.println(ANSI_PURPLE + "Vuoi veramente studiare o fare finta?..." + ANSI_RESET);
                 chiediPausa();
             } else if (pausa < 5) {
-                System.out.println(ANSI_PURPLE
-                        + "\nAffinchè tu riesca a studiare meglio nei prossimi blocchi, conviene mettere una pausa di almeno o più di 5 minuti..."
-                        + ANSI_RESET);
+                System.out.println(ANSI_PURPLE + "\nAffinchè tu riesca a studiare meglio nei prossimi blocchi, conviene mettere una pausa di almeno o più di 5 minuti..." + ANSI_RESET);
                 chiediPausa();
             } else {
                 System.out.println(ANSI_GREEN + "\nInserimento avvenuto con successo!!!" + ANSI_RESET);
@@ -127,18 +121,14 @@ public class Inserimenti {
 
     public void chiediMiniPausa() {
         try {
-            System.out.print(ANSI_YELLOW
-                    + "\nQuanto vuoi far durare le mini pause prima di riprendere?\nInserire numero intero che indica i secondi (tra 15 e 60) di mini pausa: "
-                    + ANSI_RESET);
+            System.out.print(ANSI_YELLOW + "\nQuanto vuoi far durare le mini pause prima di riprendere?\nInserire numero intero che indica i secondi (tra 15 e 60) di mini pausa: " + ANSI_RESET);
             int miniPausa = myInt.nextInt();
 
             if (miniPausa < 15) {
-                System.out.println(ANSI_PURPLE + "\nPrenditi almeno 15 secondi per ricordarti che non sei un robot!!!"
-                        + ANSI_RESET);
+                System.out.println(ANSI_PURPLE + "\nPrenditi almeno 15 secondi per ricordarti che non sei un robot!!!" + ANSI_RESET);
                 chiediMiniPausa();
             } else if (miniPausa > 60) {
-                System.out.println(
-                        ANSI_PURPLE + "\nNon esagerare con il tempo... Potresti distarti troppo..." + ANSI_RESET);
+                System.out.println(ANSI_PURPLE + "\nNon esagerare con il tempo... Potresti distarti troppo..." + ANSI_RESET);
                 chiediMiniPausa();
             } else {
                 System.out.println(ANSI_GREEN + "\nInserimento avvenuto con successo!!!" + ANSI_RESET);
