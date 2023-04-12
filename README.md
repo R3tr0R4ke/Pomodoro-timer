@@ -17,4 +17,8 @@ Download the file "Pomodoro.jar" and run it by opening the terminal and entering
 java -jar *filepath*
 ```
 
-# Developed By R3tr0R4k3
+## Developed By R3tr0R4k3
+
+# Contatti:
+
+LinkedIn: https://www.linkedin.com/in/cesare-federico-sgaramella/ 
