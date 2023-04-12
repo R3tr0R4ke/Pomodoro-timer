@@ -12,6 +12,7 @@ public class Main {
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_GREEN = "\u001B[32m";
 
     public static void main(String[] args) {
         menuPrincipale();
@@ -48,6 +49,7 @@ public class Main {
 
                 // Avvia pomodoro timer
                 case 4:
+                    System.out.println(ANSI_GREEN + "\nTimer avviato, puoi cominiciare a studiare. Ti avviserò quando sarà tempo di pausa..." + ANSI_RESET);
                     // Implemento l'iterazione in base a quante volte l'utente vuole ripetere i blocchi studio
                     for (int i = 0; i < myInsert.getRipetizioneBlocchi(); i++) {
                         // Creo un oggetto Timer in modo da poter chiamare il metodo dalla classe Timer

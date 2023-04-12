@@ -59,12 +59,12 @@ public class Inserimenti {
             System.out.print(ANSI_YELLOW + "\nPer quanto tempo vuoi studiare a blocco?\nInserisci tempo in minuti: " + ANSI_RESET);
             int studioBlocco = myInt.nextInt();
 
-            if (studioBlocco > 0) {
+            if (studioBlocco >= 20) {
                 System.out.println(ANSI_GREEN + "\nInserimento avvenuto con successo!!!" + ANSI_RESET);
                 setDurataBloccoStudio(studioBlocco);
                 chiediRipetizioni();
-            } else {
-                System.out.println(ANSI_RED + "\nInserimento errato, non può esistere un blocco di tempo uguale a 0... \nPrego reinserire scelta..." + ANSI_RESET);
+            } else if (studioBlocco < 20) {
+                System.out.println(ANSI_PURPLE + "\nVuoi veramente studiare o fare finta?..." + ANSI_RESET);
                 chiediBloccoStudio();
             }
         } catch (Exception e) {
@@ -100,9 +100,6 @@ public class Inserimenti {
 
             if (pausa >= getDurataBloccoStudio() || pausa > 30) {
                 System.out.println(ANSI_RED + "\nUna pausa non può essere più lunga di quanto tempo vuoi studiare!!!\nReinserisci un valore numerico intero non ambiguo..." + ANSI_RESET);
-                chiediPausa();
-            } else if (pausa < 20) {
-                System.out.println(ANSI_PURPLE + "Vuoi veramente studiare o fare finta?..." + ANSI_RESET);
                 chiediPausa();
             } else if (pausa < 5) {
                 System.out.println(ANSI_PURPLE + "\nAffinchè tu riesca a studiare meglio nei prossimi blocchi, conviene mettere una pausa di almeno o più di 5 minuti..." + ANSI_RESET);
